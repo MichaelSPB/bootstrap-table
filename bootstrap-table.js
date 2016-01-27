@@ -2072,14 +2072,7 @@
 
             $footerTd.eq(i).find('.fht-cell').width($this.innerWidth());
         });
-        this.$tableBody.off('scroll').on('scroll', function () {
-            that.$tableHeader.scrollLeft($(this).scrollLeft());
-
-            if (that.options.showFooter && !that.options.cardView) {
-                that.$tableFooter.scrollLeft($(this).scrollLeft());
-            }
-        });
-     };
+    };
 
     BootstrapTable.prototype.toggleColumn = function (index, checked, needUpdate) {
         if (index === -1) {
